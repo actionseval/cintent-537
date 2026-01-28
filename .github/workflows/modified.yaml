@@ -10,12 +10,12 @@ name: tts-tests
 on: [repository_dispatch, workflow_dispatch]
 
 jobs:
-  check_skip:
-    # CINTENT >> NO_TRACEES
-    # runs-on: ubuntu-latest
-    # if: "! contains(github.event.head_commit.message, '[ci skip]')"
-    # steps:
-    #   - run: echo "${{ github.event.head_commit.message }}"
+  # CINTENT >> NO_TRACEES
+  # check_skip:
+  #   runs-on: ubuntu-latest
+  #   if: "! contains(github.event.head_commit.message, '[ci skip]')"
+  #   steps:
+  #     - run: echo "${{ github.event.head_commit.message }}"
 
   test:
     runs-on: ubuntu-latest
